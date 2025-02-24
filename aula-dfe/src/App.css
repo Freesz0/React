@@ -15,8 +15,8 @@
 
 .Foto {
   margin: 0px 100px 50px 0px;
-  height: 360px;
-  width: 280px;
+  height: 225px;
+  width: 175px;
 }
 
 .Texto {
@@ -28,40 +28,45 @@ justify-content: flex-start;
 .Nome {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: darkred;
-  font-size: 96px;
+  font-size: 48px;
   margin: 0px;
 }
 
 .Contato {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 32px;
 }
 
 .Barra{
-  border-top: 2px solid darkred
+  border-top: 2px solid darkred;
 }
 
 .DivTitulo{
-  margin-top: -35px;
+  margin-top: -45px;
   color: darkred
 }
 
 .Data{
   width: 280px;
   font-weight: bold;
-  display: inline-block;
   text-align: center;
 }
 
 .Resumo{
-  padding-left: 390px;
+  padding-left: 290px;
   margin: 0px 0px 40px -14px;
   line-height: 24px;
 }
 
 .Descricao{
-  padding-left: 110px;
+  padding-left: 10px;
   margin: 0px 0px 40px -14px;
   line-height: 24px;
-  display: inline;
   }
+
+.Experiencia{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
