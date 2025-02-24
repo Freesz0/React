@@ -1,6 +1,7 @@
 .App {
   text-align: left;
   margin: 70px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .App-header {
@@ -14,7 +15,8 @@
 
 .Foto {
   margin: 0px 100px 50px 0px;
-  height: 40vmin;
+  height: 360px;
+  width: 280px;
 }
 
 .Texto {
@@ -31,7 +33,6 @@ justify-content: flex-start;
 }
 
 .Contato {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     line-height: 32px;
 }
@@ -41,14 +42,27 @@ justify-content: flex-start;
 }
 
 .DivTitulo{
-  margin-top: -30px;
+  margin-top: -35px;
   color: darkred
 }
 
-.Descricao{
-  padding-left: 390px;
-  margin-bottom: 40px;
-  line-height: 24px;
-  text-align: justify;
+.Data{
+  width: 280px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
 }
+
+.Resumo{
+  padding-left: 390px;
+  margin: 0px 0px 40px -14px;
+  line-height: 24px;
+}
+
+.Descricao{
+  padding-left: 110px;
+  margin: 0px 0px 40px -14px;
+  line-height: 24px;
+  display: inline;
+  }
 
