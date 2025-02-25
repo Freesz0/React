@@ -1,4 +1,4 @@
-import logo from './poatan.png';
+import logo from './foto.png';
 import './App.css';
 
 function App() {
@@ -7,10 +7,10 @@ function App() {
       <header className = "App-header">
         <img src={logo} className="Foto" alt="foto" />
         <div className = "Texto"><h1 className="Nome">
-          Alex Pereira
+          Alex Sandro Silva Pereira
         </h1>
         <p className = "Contato">
-          linkedin.com/in/alex-poatan-pereira<br />
+          linkedin.com/in/alex-pereira<br />
           (99) 99999-9999<br />
           alexpoatan@email.com.br
         </p>
@@ -20,24 +20,71 @@ function App() {
       <hr className = "Barra"></hr>
         <h2 className = "DivTitulo">Resumo</h2>
         <p className = "Resumo">
-          Atual campeão da divisão meio-médio do UFC e ex-campeão da divisão média, faixa preta em Kickboxing e Jiu-jitsu brasileiro. Defendi meu cinturão de oponentes mais ágeis 5 vezes, todas com nocautes e nocautes técnicos. Atualmente 3º colocado nos top 15 Pound-for-Pound, classificação que determina o sucesso e desempenho dos lutadores da organização como um todo, sem considerar pesagem. <br />
-          <br />
-          No meu cartel de lutas tenho um total de 28 no boxing amador, com apenas 3 derrotas, 1 no MMA e 2 no Kickboxing. Sou conhecido por ser um lutador agressivo e com um estilo de luta que mistura o Kickboxing com o Jiu-jitsu brasileiro, o que me rendeu o apelido de "Poatan", mão de pedra em Tupi.<br />
-          <br />
-          Também tenho experiência como servente de pedreiro e borracheiro, o que me ajudou a desenvolver força e resistência física, além de ter me ensinado a importância do trabalho duro e da disciplina.
+        Sou um atleta de alto rendimento com experiência em diversas modalidades de luta. Obtive sucesso tanto no kickboxing quanto no MMA, conquistando títulos importantes e demonstrando minha paixão e dedicação ao esporte. Sou um profissional dedicado, comprometido e focado em alcançar meus objetivos. Estou em busca de novos desafios e oportunidades para continuar crescendo e me desenvolvendo como atleta e pessoa.
         </p>
 
       <hr className = "Barra"></hr>
       <h2 className = "DivTitulo">Experiência Profissional</h2>
+
       <div className = "Experiencia">
         <div className = "Data">
-          2010 - 2021
+          Antes de 2015
         </div>
         <div className = "Descricao">
-          <strong>Kickboxer Profissional</strong><br />
-          Semifinal do <em>Glory 14: Zagreb - Middleweight Contender Tournament</em><br />
+          • Servente de pedreiro.<br />
+          • Borracheiro. 
         </div>
+
+        <div className = "Data">
+          2015 - Presente
         </div>
+          <div className = "Descricao">
+          <strong>Artes Marciais Mistas</strong><br />
+          • Início da carreira profissional no MMA.<br />
+          • Lutador do Ano de 2017.<br />
+          • Ex-Campeão Peso-Médio do UFC em 2022.<br />
+          • Campeão meio-pesado do UFC em 2023.<br />
+          • Lutador do Ano de 2023.
+        </div>
+
+        <div className = "Data">
+          2012 - 2021
+        </div>
+        <div className = "Descricao">
+          <strong>Kickboxing</strong><br />
+          • Campeão meio-pesado do em 2017.<br />
+          • Campeão médio do em 2018.<br />
+          • Duplo campeão mundial pelo Glory.
+        </div>
+      
+      </div>
+
+      <hr className = "Barra"></hr>
+      <h2 className = "DivTitulo">Formação Acadêmica</h2>
+    
+      <div className = "Formacao">
+        <div className = "Data">
+          2024
+        </div>
+        <div className = "Descricao">
+          <strong>Faixa Preta em Jiu Jitsu Brasileiro</strong><br />
+          UFC 300 - Las Vegas, Nevada
+        </div>
+
+        <div className = "Data">
+          -
+        </div>
+        <div className = "Descricao">
+          <strong>Faixa Preta em Kickboxing</strong>
+        </div>
+
+        <div className = "Data">
+          -
+        </div>
+        <div className = "Descricao">
+          <strong>Ensino Fundamental completo</strong>
+        </div>
+      </div>
     </div>
   );
 }
