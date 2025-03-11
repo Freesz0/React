@@ -1,0 +1,78 @@
+.App {
+  text-align: left;
+  margin: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App-header {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.Foto {
+  margin: 0px 100px 50px 0px;
+  height: 225px;
+  width: 175px;
+}
+
+.Texto {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+.Nome {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: darkred;
+  font-size: 48px;
+  margin: 0px;
+}
+
+.Contato {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.Barra{
+  border-top: 2px solid darkred;
+}
+
+.DivTitulo{
+  margin-top: -45px;
+  color: darkred
+}
+
+.Data{
+  font-weight: bold;
+  text-align: center;
+}
+
+.Resumo{
+  padding-left: 290px;
+  margin: 0px 0px 40px -14px;
+  line-height: 24px;
+}
+
+.Descricao{
+  padding-left: 10px;
+  margin: 0px 0px 40px -14px;
+  line-height: 24px;
+  }
+
+.Experiencia{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.Formacao{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
