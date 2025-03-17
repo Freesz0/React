@@ -20,7 +20,7 @@ function Main() {
 
             <div class="card">
                 <div class="card text-bg-primary mb-3">
-                    <div class="card-header">Cabecalho</div>
+                    <div class="card-header">Cabecalho Main</div>
                     <div class="card-body">
                         <h5 class="card-title">Primeiro titulo do card</h5>
                         <p class="card-text">Texto do card.</p>
