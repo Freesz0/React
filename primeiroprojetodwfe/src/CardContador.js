@@ -31,7 +31,7 @@ function CardContador() {
     <Card style={{ width: '30rem' }}>
       <Card.Img variant="top" src="/CardIcon.png" alt="Logo" />
       <Card.Body>
-        <Card.Title className="CardTitle">Simulador de Commit</Card.Title>
+        <Card.Title className="CardTitle">SIMULADOR DE COMMIT</Card.Title>
         <Card.Text className="CardText">
           Commits: {contagem}<br />
           Pontos: {pontos}
@@ -40,7 +40,6 @@ function CardContador() {
           <div className="ButtonCard">
             <Button style={{fontSize:'1.5rem', fontWeight: 900}} variant="success" onClick={apresentaMenu}>Dar Commit</Button>
             <Button style={{fontSize:'1.5rem'}} variant="danger" onClick={() => { setContagem(0); setPontos(0); }}>Zerar</Button>
-           
           </div>
         </Card.Body>
       </Card.Body>
