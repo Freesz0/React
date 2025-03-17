@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
+
 function App() {
   return (
     <div className = "App">
@@ -61,21 +62,21 @@ function App() {
       
       </div>
       </Tab>
-      <Tab eventKey="longer-tab" title="Formação Acadêmica">
+      <Tab eventKey="desempenho-ultima" title="Desempenho da Última Luta">
       <div className = "Formacao">
         <div className = "Data">
-          2024
+          Total de Golpes
         </div>
         <div className = "Descricao">
-          <strong>Faixa Preta em Jiu Jitsu Brasileiro</strong><br />
-          UFC 300 - Las Vegas, Nevada
+          <strong>97</strong><br />
+          
         </div>
 
         <div className = "Data">
-          -
+          Golpes Significativos
         </div>
         <div className = "Descricao">
-          <strong>Faixa Preta em Kickboxing</strong>
+          <strong>76</strong><br />
         </div>
 
         <div className = "Data">
@@ -86,7 +87,7 @@ function App() {
         </div>
       </div>
       </Tab>
-      <Tab eventKey="contact" title="Contact" disabled>
+      <Tab eventKey="cartel" title="Cartel">
         Tab content for Contact
       </Tab>
     </Tabs>

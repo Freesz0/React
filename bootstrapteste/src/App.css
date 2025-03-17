@@ -15,8 +15,7 @@
 
 .Foto {
   margin: 0px 100px 50px 0px;
-  height: 225px;
-  width: 175px;
+  max-width: 250px;
 }
 
 .Texto {
@@ -26,7 +25,7 @@ justify-content: flex-start;
 }
 
 .Nome {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: darkred;
   font-size: 48px;
   margin: 0px;
