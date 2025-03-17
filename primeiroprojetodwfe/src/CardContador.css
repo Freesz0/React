@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 1rem;
+    border: 1px solid darkmagenta;
+    border-radius: 0.5rem;
+    background-color: #f8f8ff;
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+
+.card .CardTitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: darkmagenta;
+    text-align: center;
+}
+
+.card .CardText {
+    font-family: monospace;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.card .ButtonCard {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem; 
+}
