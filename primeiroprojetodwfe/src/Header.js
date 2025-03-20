@@ -8,7 +8,7 @@ function Header(props) {
         )
     }else{
     return (
-        <h1> Com Header  </h1>
+        <h1 className='header'> Com Header  </h1>
     );
     }
 }

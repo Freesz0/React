@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './Footer.css'
 
 function Footer(props) {
 
@@ -49,7 +50,8 @@ ternario
 
     return (
         contagem < 10 ? (
-            <div className="geral">
+            <div className="footer">
+                <h1>FOOTER</h1>
                 <div className="alert alert-primary" role="alert">
                     Rodapé Alerta!
 

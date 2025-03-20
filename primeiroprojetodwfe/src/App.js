@@ -24,7 +24,7 @@ function App() {
             <Nav className="me-auto">
               <Nav.Link onClick={() => setMenu(1)}>Header</Nav.Link>
               <Nav.Link onClick={() => setMenu(2)}>Aside</Nav.Link>
-              <Nav.Link onClick={() => setMenu(3)}>Contador</Nav.Link>
+              <Nav.Link onClick={() => setMenu(3)}>Simulador</Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item onClick={() => setMenu(4)}>Main</NavDropdown.Item>
                 <NavDropdown.Item onClick={() => setMenu(5)}>Footer</NavDropdown.Item>
