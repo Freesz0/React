@@ -11,9 +11,16 @@ function CardContador() {
 
     useEffect(() => {
       if (contagem % 10 === 0 && contagem !== 0) {
-        apresentarAlerta(setPontos(pontos + 2))
+        apresentarAlerta()
+        setPontos(pontos => (pontos + 2))
       }
     }, [contagem]);
+
+    useEffect(() => {
+      if (pontos === 6) {
+        alert('Passou em FrontEnd, te vejo no TCC')
+      }
+    }, [pontos]);
 
     const apresentaMenu = () => {
       setContagem(contagem + 1)
@@ -30,7 +37,7 @@ function CardContador() {
 
       
     <Card style={{ width: '30rem' }}>
-      <Card.Img variant="top" src="/CardIcon.png" alt="Logo" />
+      <Card.Img className='CardIcon' variant="top" src="/CardIcon.png" alt="Logo" />
       <Card.Body>
         <Card.Title className="CardTitle">SIMULADOR DE COMMIT</Card.Title>
         <Card.Text className="CardText">
@@ -47,6 +54,7 @@ function CardContador() {
             </Button>
           </div>
         </Card.Body>
+        
         <Modal show={showModal} onHide={() => setShowModal(false)}>
             <Modal.Header closeButton>
                 <Modal.Title>CUIDADO!</Modal.Title>

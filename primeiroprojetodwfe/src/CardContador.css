@@ -11,6 +11,24 @@
     box-shadow: 0 0 1rem rgb(0, 0, 0);
 }
 
+/* 
+@media (prefers-reduced-motion: no-preference) {
+    .CardIcon {
+      animation: App-logo-spin infinite 3s linear;
+    }
+  }
+
+
+@keyframes Spin-daves {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } 
+*/
+
 .card .CardTitle {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
