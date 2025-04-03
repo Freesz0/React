@@ -1,5 +1,17 @@
-.header {
-  font-family: 'Times New Roman', monospace;
-  letter-spacing: 30px;
-  color: rgb(107, 69, 146);
+.header1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 6px;
+  color: rgb(16, 65, 99);
+  background-color: rgb(201, 227, 236);
+  text-align: center;
+  padding: 1rem;
+}
+
+.formularioHeader {
+  align-items: center;
+  padding: 3rem 7rem;
+}
+
+.mb-3 {
+  max-width: 20rem;
 }
