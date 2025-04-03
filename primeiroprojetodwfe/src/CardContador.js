@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 
-function CardContador() {
+function CardContador(props) {
     const [contagem, setContagem] = useState(0)
     const [pontos, setPontos] = useState(0)
     const [showModal, setShowModal] = useState(false)
@@ -23,7 +23,10 @@ function CardContador() {
     }, [pontos]);
 
     const apresentaMenu = () => {
-      setContagem(contagem + 1)
+      setContagem(contagem + 1);
+      if (props.alertaCommit) {
+        props.alertaCommit();
+      }
     }
     
     const apresentarAlerta = () => {
@@ -31,15 +34,24 @@ function CardContador() {
     }
 
     const alertaZerar = () => {
-      setShowModal(true)};
+      if (pontos > 0) {
+        return (
+          setShowModal(true));
+      }else{
+        alert('Vocẽ não tem pontos!')
+    }}
+
+    // const alertaZerar = () => {
+    //   setShowModal(true)};
 
     return (
 
-      
-    <Card style={{ width: '30rem' }}>
-      <Card.Img className='CardIcon' variant="top" src="/CardIcon.png" alt="Logo" />
+    <>
+    <h1 style={{CardContador}}>SIMULADOR DE COMMIT</h1>
+
+    <Card alertaCommit={() => alert('Commit realizado!')} style={{ width: '30rem' }}>
+      <Card.Img style={{width: '384px'}}className='CardIcon' variant="top" src="/CardIcon.png" alt="Logo" />
       <Card.Body>
-        <Card.Title className="CardTitle">SIMULADOR DE COMMIT</Card.Title>
         <Card.Text className="CardText">
           Commits: {contagem}<br />
           Pontos: {pontos}
@@ -49,7 +61,7 @@ function CardContador() {
             <Button size="lg" style={{fontSize:'1.5rem', fontWeight: 900}} variant="success" onClick={apresentaMenu}>
               DAR COMMIT
             </Button>
-            <Button size="sm" style={{fontSize:'1rem'}} variant="danger" onClick={alertaZerar}>
+            <Button size="sm" style={{fontSize:'1rem'}} variant="danger" onClick={alertaZerar} pontos={pontos}>
               ZERAR
             </Button>
           </div>
@@ -66,13 +78,14 @@ function CardContador() {
                 <Button variant="secondary" onClick={() => setShowModal(false)}>
                     Cancelar
                 </Button>
-                <Button variant="danger" onClick={() => { setContagem(0); setPontos(0); setShowModal(false); }}>
+                <Button variant="danger" onClick={() => { setContagem(0); setPontos(0); setShowModal(false)}}>
                     Zerar
                 </Button>
             </Modal.Footer>
         </Modal>
       </Card.Body>
     </Card>
+    </>
     );
 }
 
